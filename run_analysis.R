@@ -76,4 +76,4 @@ meanStdData <- data %>%
 tidyData5 <- data %>%
     group_by(volunteer, activity) %>%
     summarise_all(mean)
-write.table(tidyData5, 'tidyData5.txt', col.names = FALSE)
+write.table(tidyData5, 'tidyData5.txt', row.names = FALSE)
